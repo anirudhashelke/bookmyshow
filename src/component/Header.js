@@ -6,8 +6,8 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <>
-    <header>
-        <div className='container py-4'>
+    <header >
+        <div className='container pt-4 pb-3'>
             <div className="row justify-content-between">
                 <div className='col-12 col-md-7'>
                     <div className='gap-3 row  d-flex   '>
@@ -35,11 +35,12 @@ const Header = () => {
 
         {/* bottom header */}
 
-        <section className='container a-heade-bottom'>
+        <section className=' a-heade-bottom' >
+            <div className='container'>
              <div className="row justify-content-between">
                 <div className='col-12 col-md-4'>
                     <nav>
-                        <ul className='d-flex '>
+                        <ul className='d-flex p-0'>
                             <li><NavLink to={"/movies"}>Movies</NavLink></li>
                             <li><NavLink to={"/stream"}>Stream</NavLink></li>
                             <li><NavLink to={"/events"}>Events</NavLink></li>
@@ -61,6 +62,7 @@ const Header = () => {
                         </ul>
                     </nav>
                 </div>
+             </div>
              </div>
         </section>
     </header>

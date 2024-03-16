@@ -12,6 +12,8 @@ import Listshow from './navbar/Listshow';
 import Corporate from './navbar/Corporate';
 import Offers from './navbar/Offers';
 import Giftcards from './navbar/Giftcards';
+import Footer from './footer/Footer';
+
 
 function App() {
   // const routers=[
@@ -36,6 +38,7 @@ function App() {
       <Route  path='/offers' element={<Offers />}/>
       <Route  path='/gaftcards' element={<Giftcards />}/>
     </Routes>
+    <Footer />
     </>
   );
 }
