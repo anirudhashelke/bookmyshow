@@ -8,16 +8,16 @@ import MenuLinks from './MenuLinks'
 import SocialLinks from './SocialLinks'
 
 const Footer = () => {
-  return (
-    <>
-    <Navigation />
-    <Descriptions/>
-    <ContactToday />
-    <Services />
-    <MenuLinks />
-    <SocialLinks />
-    </>
-  )
+    return (
+        <>
+            <Navigation />
+            <Descriptions />
+            <ContactToday />
+            <Services />
+            <MenuLinks />
+            <SocialLinks />
+        </>
+    )
 }
 
 export default Footer

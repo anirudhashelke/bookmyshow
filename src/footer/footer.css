@@ -1,3 +1,47 @@
 .a-services:hover{
 color: rgb(198, 198, 199) !important;
 }
+.a-menulinks span:hover{
+   color: #fff !important;
+}
+.a-sociallinks .a-icons{
+background-color: rgb(93, 93, 95);
+width: 37px;
+height: 37px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+}
+.a-sociallinks .a-icons:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+.a-img-box{
+    border-top: 1px solid rgb(102, 102, 102);
+    position: relative;
+    width: 96%;
+    margin: auto;
+}
+.a-img-boxs{
+   
+    display: flex;
+    justify-content: center;
+
+}
+.a-imgs{
+    position: absolute;
+    background-color: #333338;
+    /* background-color: aqua; */
+    width:100px;
+    height: 70px;
+    width:10%;
+    top: -16px;
+    
+    /* padding:0px 20px; */
+}
+.a-imgs img{
+object-fit: cover !important;
+
+}

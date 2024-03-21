@@ -1,3 +1,31 @@
+body{
+    background-color:rgb(245, 245, 245);
+    font-family: "Roboto", sans-serif;
+}
+
+/* creaet my class */
+.a-11{
+    font-size: 11px;
+}
+.a-12{
+    font-size: 12px;
+}
+.a-13{
+    font-size: 13px;
+}
+.a-14{
+    font-size: 14px;
+}
+.a-15{
+    font-size: 15px;
+}
+.color-red{
+    color: rgb(220, 53, 75);
+}
+
+body::-webkit-scrollbar{
+    width: 0px !important;
+}
 .logo{
     background-image: url("./img/logo.png");
     height: 30px;

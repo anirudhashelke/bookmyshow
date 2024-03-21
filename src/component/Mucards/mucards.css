@@ -1,0 +1,12 @@
+.a-movies-card {
+    height: 330px;
+    padding: 5px;
+    
+}
+
+.a-movies-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 7px;
+}

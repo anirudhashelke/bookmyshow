@@ -1,0 +1,46 @@
+.a-promoted {
+    background-size: cover !important;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.a-promoted-banners {
+    background: rgb(0, 0, 0);
+    height: 100%;
+    background: linear-gradient(95deg, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.a-promoted-banners .a-img-boxs{
+    height: 440px;
+    width: 100%;
+    padding: 15px;
+}
+.a-promoted-banners .a-img-boxs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.a-promoted-banners  .a-description{
+    line-height: 25px;
+}
+
+.a-promoted-banners .a-playicon{
+    width: 20px;
+    height: 20px;
+    background: #F84464;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a-promoted-banners .a-premiere{
+   letter-spacing: 1px;
+   font-weight: 400;
+}
+.a-promoted-banners .a-stream{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: normal;
+}
