@@ -24,12 +24,10 @@ const Descriptions = () => {
         },
     ];
     return (
-        <>
             <section className='pt-3 pb-2' style={{ background: "rgb(242, 242, 242)" }}>
                 <div className='container'>
-                    {data.map((values,index) => {
-                        return <>
-                            <div key={index} className='pt-'>
+                    {data.map((values,index) => { 
+                         return   <div key={index} className='pt-'>
                                 <h5 style={{ fontSize: "14px", color: "rgb(127, 127, 127)", fontWeight: "500" }}>
                                     {values.title}
                                 </h5>
@@ -37,12 +35,9 @@ const Descriptions = () => {
                                     {values.description}
                                 </p>
                             </div>
-
-                        </>
                     })}
                 </div>
             </section>
-        </>
     )
 }
 

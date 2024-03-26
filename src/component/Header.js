@@ -31,10 +31,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-
-
                 {/* bottom header */}
-
                 <section className=' a-heade-bottom' >
                     <div className='container'>
                         <div className="row justify-content-between">

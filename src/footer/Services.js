@@ -24,15 +24,13 @@ const Services = () => {
                     <div className="row py-4" >
 
                         {data.map((value,index) => {
-                            return <>
-                                <div key={index} className="col-12 col-md-4 text-center b_service_box">
-                                    <div className='a-services' style={{ color: "rgba(188, 192, 196, 0.74)" }}>
-                                        <div className='py-2 '> {value.icon}</div>
-                                        <p className="b_h12 roboto-light mt-1" style={{ fontSize: "11px" }}>{value.title}</p>
-                                    </div>
-                                </div>
-                            </>
-
+                            return <div key={index} className="col-12 col-md-4 text-center b_service_box">
+                            <div className='a-services' style={{ color: "rgba(188, 192, 196, 0.74)" }}>
+                                <div className='py-2 '> {value.icon}</div>
+                                <p className="b_h12 roboto-light mt-1" style={{ fontSize: "11px" }}>{value.title}</p>
+                            </div>
+                        </div>
+                                
                         })}
 
 

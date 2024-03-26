@@ -2,7 +2,6 @@ import React from 'react'
 import { GiHut } from "react-icons/gi";
 const ContactToday = () => {
     return (
-        <>
             <section className='py-4 text-white' style={{ background: "rgb(49, 48, 53)" }}>
                 <div className='container'>
                     <div className="row align-items-center">
@@ -19,7 +18,6 @@ const ContactToday = () => {
                     </div>
                 </div>
             </section>
-        </>
     )
 }
 

@@ -4,13 +4,11 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
 }
-
 .a-promoted-banners {
     background: rgb(0, 0, 0);
     height: 100%;
     background: linear-gradient(95deg, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.4) 100%);
 }
-
 .a-promoted-banners .a-img-boxs{
     height: 440px;
     width: 100%;
@@ -25,7 +23,6 @@
 .a-promoted-banners  .a-description{
     line-height: 25px;
 }
-
 .a-promoted-banners .a-playicon{
     width: 20px;
     height: 20px;

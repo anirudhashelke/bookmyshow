@@ -65,33 +65,23 @@ const MenuLinks = () => {
         {
         title:"BOOKMYSHOW EXCLUSIVES",
         links:["Lollapalooza India" , "Superstar" , "BookASmile" , "Corporate Vouchers" , "Gift Cards" , "List My Show" , "Offers" , "Stream "," Trailers"]
-        }
-       
+        }  
      ];
   return (
-    
-    <>
     <section className='pt-3 pb-5 a-menulinks' style={{background:"#333338"}}>
       <div className='container'>
-        {data.map((values,index)=>{
-            return <>
-             <div key={index} className='py-2'>
+        {data.map((values,index)=>{  
+             return  <div key={index} className='py-2'>
           <h6 style={{color:"rgb(165, 165, 165)",fontWeight:"400",fontSize:"12px"}}>{values.title.toUpperCase()}</h6>
           {values.links.map((ele,index)=>{
-             return <>
-              <span  className={`${index !== 0 ? "border-start border-secondary px-2" :"pe-2"}`} key={index} style={{color:"rgb(127, 127, 127)",fontSize:"11px"}}>
-          {ele}
-            </span>
-             </>
-          })}
-         
-        </div>
-            </>
-        })}
-        
+             return <span  className={`${index !== 0 ? "border-start border-secondary px-2" :"pe-2"}`} key={index} style={{color:"rgb(127, 127, 127)",fontSize:"11px"}}>
+             {ele}
+               </span>
+             })}
+           </div>   
+        })}  
       </div>
     </section>
-    </>
   )
 }
 

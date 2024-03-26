@@ -1,0 +1,6 @@
+.a_sticky {
+    position: sticky;
+    height: max-content;
+    top: 0px;
+
+}

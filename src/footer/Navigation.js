@@ -4,7 +4,7 @@ const Navigation = () => {
     return (
         <>
             <section className='bg-white'>
-                <div className='container py-3 mt-5 ' style={{ fontSize: "12px" }}>
+                <div className='container py-3 mt-3 ' style={{ fontSize: "12px" }}>
                     Home <HiOutlineArrowLongRight />  Movies
 
                 </div>

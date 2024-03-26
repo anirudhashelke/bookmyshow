@@ -10,9 +10,7 @@ const Filter = ({ buttons, title }) => {
   function toggleButton() {
     setOpen(!open)
   }
-
   return (
-    <>
       <section>
         <div className='bg-white p-2 rounded my-2 '>
           <div onClick={toggleButton} className='d-flex align-items-center justify-content-between' style={{ cursor: "pointer" }}>
@@ -30,9 +28,7 @@ const Filter = ({ buttons, title }) => {
             })}
           </div>}
         </div>
-
       </section>
-    </>
   )
 }
 
