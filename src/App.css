@@ -74,6 +74,9 @@ body::-webkit-scrollbar{
     font-weight: 400;
     color: rgb(51, 51, 51);
 }
+.a-heade-bottom nav ul li:first-child a{
+    color: red !important;
+}
 .a-heade-bottom nav ul li a:hover{
     color: red;
 }
