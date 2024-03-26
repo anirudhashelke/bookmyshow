@@ -28,6 +28,7 @@ function App() {
   return (
     <>
       <Header />
+      <Movies />
 
       <Routes >
         <Route path='/movies' element={<Movies />} />
