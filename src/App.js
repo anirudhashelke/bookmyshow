@@ -7,7 +7,6 @@ import './App.css';
 import Header from './component/Header';
 import Plays from './navbar/Plays';
 import Corporate from './navbar/Corporate';
-import Offers from './navbar/Offers';
 import Giftcards from './navbar/Giftcards';
 import Footer from './footer/Footer';
 import Movies from './navbar/movies/Movies';
@@ -16,15 +15,10 @@ import Events from './navbar/Event/Events';
 import Activities from './navbar/Activities/Activities';
 import Sports from './navbar/Sports/Sports';
 import Listshow from './navbar/ListyouShow/Listshow';
+import Offers from './navbar/Offers/Offers';
 
 
 function App() {
-  // const routers=[
-  //   {
-  //     path:"",
-  //     element:""
-  //   }
-  // ]
   return (
     <>
       <Header />

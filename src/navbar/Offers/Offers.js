@@ -1,8 +1,9 @@
 import React from 'react'
-
 const Offers = () => {
   return (
-    <div>Offers</div>
+   <section>
+    offers
+   </section>
   )
 }
 
