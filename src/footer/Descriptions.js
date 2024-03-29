@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom';
 
 const Descriptions = () => {
-    const data = [
+    const { pathname } = useLocation();
+    let data = [
         {
             title: "Enjoy Online Ticket Booking for Movies in selu With BookMyShow",
             description: "If you are planning for movie ticket bookings for the latest movies in Mumbai, don't look any further. Now it is easy to get on with online ticket booking with BookMyShow. Your one-stop solution for movies to watch this weekend. Everyone enjoys watching their favorite movies on the big screen, and the excitement of watching it with friends is unparalleled. If you have been eagerly waiting for a movie that you can watch with your friends and family, now you know where to get the tickets from. When you watch a film in a cinema theatre, you get to watch it on a massive screen with surround-sound, and that enhances your movie-watching experience. Thus, allowing you to be a part of the actual movie. Get to know about all movies and movie trailers to watch here. Also, know how to book movie tickets.",
@@ -23,6 +25,35 @@ const Descriptions = () => {
             description: "Grab on your popcorn because there are many movies to watch today in Mumbai. If you want to save some money, don't miss out on our movie offers and discounts. Check out the movies running in cinemas time, and call all your friends to enjoy the best movie-watching experience together. There are many big releases in the pipeline, and it is expected that these movies will have the perfect casting and direction. Get ready for upcoming movies in theatres.",
         },
     ];
+
+    if (pathname === "/listshow") {
+        data = [
+            {
+                title: "Privacy Note",
+                description: (
+                    <span>
+                        By using www.bookmyshow.com(our website), you are fully accepting
+                        the Privacy Policy available at{" "}
+                        <Link
+                            to="/privacy"
+                            className="color-red text-decoration-none"
+                        >
+                            https://bookmyshow.com/privacy
+                        </Link>{" "}
+                        governing your access to Bookmyshow and provision of services by
+                        Bookmyshow to you. If you do not accept terms mentioned in the{" "}
+                        <Link
+                            to="/privacy"
+                            className="color-red text-decoration-none"
+                        >
+                            Privacy Policy
+                        </Link>
+                        , you must not share any of your personal information and immediately exit Bookmyshow.
+                    </span>
+                ),
+            },
+        ];
+    }
     return (
             <section className='pt-3 pb-2' style={{ background: "rgb(242, 242, 242)" }}>
                 <div className='container'>

@@ -2,6 +2,7 @@ import React from 'react'
 import "./listshow.css"
 import ListshowMlitiescarousel from '../../component/listshowmulticarousel/ListshowMlitiescarousel'
 import BannersCards from './BannersCards';
+import Listshowcsider from './Listshowcsider';
 
 function ShowsMainText({ title, desc }) {
   return (
@@ -43,34 +44,35 @@ const Listshow = () => {
     {
         imgPath: "shows/i-7.avif",
         title: "Online Sales & Marketing ",
-        background:"rgb(252, 241, 241)"
+        // background:"green"
     },
     {
         imgPath: "shows/i-8.avif",
         title: "Pricing ",
-        background:"rgb(252, 241, 241)"
+        // background:"purple"
     },
     {
         imgPath: "shows/i-9.avif",
         title: "Food & beverages, stalls and the works!",
-        background:"rgb(252, 241, 241)"
+        // background:"blue"
     },
     {
         imgPath: "shows/i-10.avif",
         title: "On ground support & gate entry management",
-        background:"rgb(252, 241, 241)"
+        // background:"yellow"
     },
     {
         imgPath: "shows/i-11.avif",
         title: "Reports & business insights",
-        background:"rgb(252, 241, 241)"
+        // background:"pink"
     },
     {
         imgPath: "shows/i-12.avif",
         title: "POS, RFID, Turnstiles & more...",
-        background:"rgb(252, 241, 241)"
+        // background:"red"
     },
 ];
+
   return (
     <section className="a_shows">
             <div className="my-3">
@@ -88,8 +90,8 @@ const Listshow = () => {
                     <div className="row">
                         {cardData.map(function (values, index) {
                             return (
-                                <div key={index} className="col-12 col-md-4 mt-4">
-                                    <BannersCards {...values} />
+                                <div key={index}  className="col-12 col-md-4 mt-4">
+                                    <BannersCards background='rgb(236, 245, 255)' {...values} />
                                 </div>
                             );
                         })}
@@ -112,7 +114,7 @@ const Listshow = () => {
                         {cardDatas.map(function (values, index) {
                             return (
                                 <div key={index}   className="col-12 col-md-4 mt-4 ">
-                                    <BannersCards style={{background:"rgb(252, 241, 241)"}} {...values} />
+                                    <BannersCards background='rgb(252, 241, 241)' {...values} />
                                 </div>
                             );
                         })}
@@ -121,6 +123,14 @@ const Listshow = () => {
                     <div className="text-center mt-5">
                         <button style={{padding:"14px 95px",background:"rgb(236, 94, 113)",borderRadius:"8px"}} className="text-white btn btn-sm  fw-bold">List your show</button>
                     </div>
+                </div>
+            </div>
+
+            <Listshowcsider  />
+
+            <div style={{background: "#FFFFFF"}} className='pb-5'>
+            <div style={{ width: "40%", background: "url(shows/security-imag.avif)" }} className="mx-auto a_security">
+                    <ShowsMainText width={100} title={"Sit back and watch your event come to life"} desc={"Events maybe all fun and games, but we take it seriously. We ensure our customer’s security so that you don’t have to."} />
                 </div>
             </div>
         </section>    

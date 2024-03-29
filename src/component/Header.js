@@ -38,7 +38,7 @@ const Header = () => {
                             <div className='col-12 col-md-4'>
                                 <nav>
                                     <ul className='d-flex p-0'>
-                                        <li><NavLink className='a-movies-head' to={"/movies"}>Movies</NavLink></li>
+                                        <li><NavLink className='a-movies-head' to={"/"}>Movies</NavLink></li>
                                         <li><NavLink to={"/stream"}>Stream</NavLink></li>
                                         <li><NavLink to={"/events"}>Events</NavLink></li>
                                         <li><NavLink to={"/plays"}>Plays</NavLink></li>

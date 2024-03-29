@@ -14,77 +14,77 @@ const moviesImg = [
 
 const moviesData = [
   {
-      movieName: "Manjummel Boys",
-      movieCertificate: "U",
-      language: "malayalam",
-      src: "movies/cards-1.avif",
+    movieName: "Manjummel Boys",
+    movieCertificate: "U",
+    language: "malayalam",
+    src: "movies/cards-1.avif",
   },
   {
-      movieName: "Premalu",
-      movieCertificate: "U",
-      language: "malayalam",
-      src: "movies/cards-2.avif",
+    movieName: "Premalu",
+    movieCertificate: "U",
+    language: "malayalam",
+    src: "movies/cards-2.avif",
   },
   {
-      movieName: "AnchakkallaKokkan",
-      movieCertificate: "UA",
-      language: "Marathi",
-      src: "movies/cards-3.avif",
+    movieName: "AnchakkallaKokkan",
+    movieCertificate: "UA",
+    language: "Marathi",
+    src: "movies/cards-3.avif",
   },
   {
-      movieName: "Godzila x Kong",
-      movieCertificate: "UA",
-      language: "English",
-      src: "movies/cards-4.avif",
+    movieName: "Godzila x Kong",
+    movieCertificate: "UA",
+    language: "English",
+    src: "movies/cards-4.avif",
   },
   {
     movieName: "Kung Fu Panda 4",
     movieCertificate: "UA",
     language: "Hindi",
     src: "movies/c-5.avif",
-},
-{
+  },
+  {
     movieName: "dune:Part Two",
     movieCertificate: "UA",
     language: "Hindi",
     src: "movies/c-6.avif",
-},
-{
+  },
+  {
     movieName: "Yodha",
     movieCertificate: "UA",
     language: "Marathi",
     src: "movies/c-7.avif",
-},
-{
+  },
+  {
     movieName: "Shaitaan",
     movieCertificate: "UA",
     language: "Tamil",
     src: "movies/c-8.avif",
-},
-{
+  },
+  {
     movieName: "Bramyugam",
     movieCertificate: "UA",
     language: "English",
     src: "movies/c-9.avif",
-},
-{
+  },
+  {
     movieName: "Secret Home",
     movieCertificate: "UA",
     language: "Marathi",
     src: "movies/c-10.avif",
-},
-{
+  },
+  {
     movieName: "Madgaon Express",
     movieCertificate: "UA",
     language: "Hindi",
     src: "movies/c-11.avif",
-},
-{
+  },
+  {
     movieName: "Thakamani",
     movieCertificate: "UA",
     language: "Marathi",
     src: "movies/c-12.avif",
-},
+  },
 ];
 const Movies = () => {
 
@@ -132,18 +132,18 @@ const Movies = () => {
               <div>
                 <Appliedfilter title={"Movies in Selu"} buttons={["Hindi", "Marathi", "Thriller"]} />
                 <div className="my-4">
-                                <Headerbaner
-                                    title2={"Explore Upcomming Movies"}
-                                    title={"Comming Soon"}
-                                />
-                            </div>
+                  <Headerbaner
+                    title2={"Explore Upcomming Movies"}
+                    title={"Comming Soon"}
+                  />
+                </div>
 
-                            <div className="row">
-                                {moviesData.map(value => <div key={value.movieName} className="col-12 col-sm-6 col-lg-4 col-xl-3 mt-3">
-                                    <Mucards {...value} />
-                                </div>)}
-                            </div>
-              </div> 
+                <div className="row">
+                  {moviesData.map(value => <div key={value.movieName} className="col-12 col-sm-6 col-lg-4 col-xl-3 mt-3">
+                    <Mucards {...value} />
+                  </div>)}
+                </div>
+              </div>
             </div>
           </div>
         </div>
